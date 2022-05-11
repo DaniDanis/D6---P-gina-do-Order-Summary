@@ -6,6 +6,9 @@ body {
     min-height: 100vh;
     background-color: hsl(225, 100%, 94%);
     font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg); 
+    background-repeat:no-repeat;
+    background-size: 100%;
 }
 
 .interface {
@@ -29,19 +32,35 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    padding-left: 15%;
+    padding-right: 15%;    
+    text-align: center;    
+}
+
+.texto p {
+    color: hsl(224, 23%, 55%);
+    margin-top: 0px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
 }
 
 .escolhaPlano {
     display: flex;
     align-items: center;
     gap: 1rem;
-    background-color: hsl(225, 100%, 98%)
+    background-color: hsl(225, 100%, 98%);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.escolhaPlano a {
+    padding-left: 34px;
 }
 
 .botoes {
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .botoes button {
@@ -50,10 +69,68 @@ body {
     width: 300px;
     font-weight: bold;
     border-radius: 10px;
-    
+    font-size: 16px;
 }
 
 .botaoAzul {
     background-color: hsl(245, 75%, 52%);
     color: white;
+}
+
+.botaoBranco {
+    background-color: white;
+    color: hsl(224, 23%, 55%);
+}
+
+.valorDoPlano {
+    color: hsl(224, 23%, 55%);
+}
+
+.nomePlanoEValor {
+    display: flex;
+    flex-direction: column;
+}
+
+.nomePlanoEValor p {
+    line-height: 1em;
+    margin: 0;
+    padding: 5px;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+@media (max-width:375px) {
+    body {
+    background-image: url(images/pattern-background-mobile.svg); 
+    background-repeat:no-repeat;
+    background-size: 100%;
+    }
+    .interface {
+        display: flex;
+        max-width: 330px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        border-radius: 25px;
+        background-color: white;
+    }
+
+    .interface img {
+        max-width: 330px;
+    }
+    .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;    
+        text-align: center;    
+    }
+
+    .texto h1 {
+        font-weight: 900;
+    }
 }
