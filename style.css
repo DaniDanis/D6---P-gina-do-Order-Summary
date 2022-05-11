@@ -3,15 +3,57 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .interface {
     display: flex;
-    background-color: red;
     max-width: 375px;
-    min-height: 100vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin: auto;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.interface img {
+    max-width: 375px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.escolhaPlano {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: hsl(225, 100%, 98%)
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes button {
+    border: none;
+    padding: 5%;
+    width: 300px;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+
+.botaoAzul {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
 }
